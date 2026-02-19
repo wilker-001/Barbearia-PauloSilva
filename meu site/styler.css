@@ -343,3 +343,28 @@ input:focus, select:focus {
     font-size: 28px;
   }
 }
+/* BALÃO (TOOLTIP) DOS BOTÕES FLUTUANTES */
+.tooltip {
+  position: absolute;
+  right: 70px;
+  background: #111;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  border: 1px solid #333;
+  opacity: 0;
+  transform: translateX(10px);
+  pointer-events: none;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.float-btn {
+  position: relative;
+}
+
+.float-btn:hover .tooltip {
+  opacity: 1;
+  transform: translateX(0px);
+}
