@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Paulo Silva</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+
+      <div class="logo-area">
+        <!-- Quando tu quiser, a gente coloca a logo aqui -->
+        <img class="logo-img" src="logo.png" alt="Logo Barbearia Paulo Silva">
+        <div>
+          <h1>Barbearia Paulo Silva</h1>
+          <p>Seu corte na régua, do jeito certo!</p>
+        </div>
+      </div>
+
+      <a class="btn btn-primary" href="#agendamento">Agendar agora</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Estilo, confiança e respeito</h2>
+      <p>
+        Atendimento de segunda a sábado. Agende seu horário em poucos segundos.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#agendamento">Agendar</a>
+        <a class="btn btn-outline" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <h2 class="title">Serviços</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Corte Social</h3>
+          <p>Clássico, alinhado e elegante.</p>
+        </div>
+
+        <div class="card">
+          <h3>Corte Degradê</h3>
+          <p>Na régua, moderno e estiloso.</p>
+        </div>
+
+        <div class="card">
+          <h3>Corte Americano</h3>
+          <p>Bem feito e marcante, do jeito certo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDAMENTO -->
+  <section class="section" id="agendamento">
+    <div class="container">
+      <h2 class="title">Agendamento</h2>
+      <p class="subtitle">
+        Escolha o serviço, data e horário. Horários disponíveis: <strong>13:00, 16:00, 19:00</strong>
+      </p>
+
+      <div class="form-card">
+        <form id="formAgendamento">
+
+          <div class="input-group">
+            <label for="nome">Seu nome</label>
+            <input id="nome" type="text" placeholder="Ex: Wilker" required />
+          </div>
+
+          <div class="input-group">
+            <label for="servico">Serviço</label>
+            <select id="servico" required>
+              <option value="">Selecione...</option>
+              <option value="Corte Social">Corte Social</option>
+              <option value="Corte Degradê">Corte Degradê</option>
+              <option value="Corte Americano">Corte Americano</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="data">Data</label>
+            <input id="data" type="date" required />
+            <small class="hint">Atendimento: Segunda a Sábado</small>
+          </div>
+
+          <div class="input-group">
+            <label for="hora">Horário</label>
+            <select id="hora" required>
+              <option value="">Selecione...</option>
+              <option value="13:00">13:00</option>
+              <option value="16:00">16:00</option>
+              <option value="19:00">19:00</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary btn-full" type="submit">
+            Confirmar no WhatsApp
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title">Localização</h2>
+
+      <div class="info-card">
+        <p><strong>📍 Endereço:</strong> Avenida Praião n°220</p>
+        <p><strong>🕒 Horário:</strong> Segunda a Sábado — 08:00 às 19:00</p>
+        <p><strong>📷 Instagram:</strong> @barbearia_paulosilva</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 - Barbearia Paulo Silva</p>
+      <p>Desenvolvido com ❤️</p>
+    </div>
+  </footer>
+
+  <!-- BOTÕES FLUTUANTES -->
+  <div class="float-buttons">
+
+    <a class="float-btn whatsapp"
+       href="https://wa.me/5563992131295"
+       target="_blank"
+       title="WhatsApp">
+      💬
+    </a>
+
+    <a class="float-btn instagram"
+       href="https://instagram.com/barbearia_paulosilva"
+       target="_blank"
+       title="Instagram">
+      📷
+    </a>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
